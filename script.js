@@ -8,7 +8,7 @@ const lightboxMeta = document.querySelector('#lightbox-meta');
 function renderGallery(works) {
   gallery.innerHTML = works.map((work, index) => `
     <button class="art-card ${index % 5 === 0 ? 'card-tall' : ''} ${index % 3 === 1 ? 'card-wide' : ''}" data-category="${work.category}" data-title="${work.title}" data-meta="${work.meta}" data-art="${work.art || 'sea'}" type="button">
-      <span class="art-thumb art-${work.art || 'sea'} ${work.image ? 'has-image' : ''}" ${work.image ? `style="background-image:url('${work.image}');background-size:cover;background-position:center"` : ''}></span>
+      <span class="art-thumb art-${work.art || 'sea'} ${work.image ? 'has-image' : ''}" ${work.image ? `style="background-image:url('${work.image}');background-size:contain;background-repeat:no-repeat;background-position:center"` : ''}></span>
       <span class="card-info"><strong>${work.title}</strong><small>${work.meta}</small></span>
     </button>`).join('');
 
