@@ -1,1 +1,19 @@
-.art-thumb.has-image:before,.art-thumb.has-image:after,.lightbox-art.has-image:before,.lightbox-art.has-image:after{display:none}.art-card{display:flex;flex-direction:column;min-height:0}.art-thumb{height:auto;flex:1;min-height:0}.card-info{flex:0 0 auto}.art-thumb.has-image{background-color:#e6dfd5}.lightbox-art.has-image{background-color:#e6dfd5}
+.gallery-grid{grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:auto;gap:36px 24px;align-items:start}
+.art-card{display:flex;flex-direction:column;min-width:0;width:100%;grid-column:auto;grid-row:auto}
+.art-card>img{display:block;width:100%;height:auto;border-radius:2px}
+.card-info{padding-top:14px;width:100%}.card-info small{font-size:13px;line-height:1.6;display:block}.card-info strong{font-size:20px}
+.viewer-open{overflow:hidden}
+.lightbox[open]{display:flex;flex-direction:column;width:min(900px,94vw);height:min(900px,92dvh);max-height:92dvh;overflow:hidden;padding:52px 16px 12px}
+.lightbox-art{flex:1;min-height:0;height:auto;background:none;display:flex;justify-content:center;align-items:center}
+.lightbox-art:before,.lightbox-art:after{display:none}
+.lightbox-art img{display:block;width:100%;height:100%;object-fit:contain;min-height:0}
+.lightbox-info{flex:none;padding:14px 8px 6px}.lightbox-info h2{font-size:24px}.lightbox-info .eyebrow{display:none}.lightbox-info p:last-child{font-size:13px}
+.close-lightbox{top:4px;right:8px;width:44px;height:44px}
+.viewer-controls{display:flex;align-items:center;justify-content:space-between;gap:10px;flex:none;padding-top:8px}
+.viewer-controls button{min-height:44px;padding:8px 16px;border:1px solid var(--line);background:var(--paper);border-radius:24px;cursor:pointer}.viewer-controls span{font-size:14px}
+.nav-links a,.menu-toggle{padding:12px 0}.filter{min-height:44px}.filter[hidden]{display:none}
+:focus-visible{outline:3px solid #a94431;outline-offset:4px}
+section{scroll-margin-top:20px}
+@media(max-width:750px){.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 16px}.card-info strong{font-size:18px}}
+@media(max-width:480px){.gallery-grid{grid-template-columns:1fr;gap:36px}.gallery-section{padding:55px 7vw}.lightbox[open]{width:96vw;padding:48px 10px 10px}.lightbox-info h2{font-size:22px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
