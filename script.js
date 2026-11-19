@@ -17,7 +17,12 @@ function renderGallery(works) {
     lightboxTitle.textContent = card.dataset.title;
     lightboxMeta.textContent = card.dataset.meta;
     const image = card.querySelector('.art-thumb').style.backgroundImage;
-    if (image) lightboxArt.style.backgroundImage = image;
+    if (image) {
+      lightboxArt.style.backgroundImage = image;
+      lightboxArt.style.backgroundSize = 'contain';
+      lightboxArt.style.backgroundRepeat = 'no-repeat';
+      lightboxArt.style.backgroundPosition = 'center';
+    }
     lightbox.showModal();
   }));
 }
