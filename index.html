@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Galeria online de Patrícia — pintura, cor e matéria." />
+    <title>Entre Camadas — Patrícia</title>
+    <link rel="icon" href="logo.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,500;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="image-overrides.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand-logo" href="#top" aria-label="Entre Camadas, início"><img src="logo.svg" alt="Entre Camadas — Galeria de Patrícia" /></a>
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a href="#obras">Obras</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">Menu</button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Entre Camadas · 2026</p>
+          <h1 id="hero-title">Pintar é<br /><em>deixar acontecer.</em></h1>
+          <p class="hero-intro">Uma seleção de quadros de Patrícia, entre a intuição, a cor e as marcas do tempo.</p>
+          <a class="text-link" href="#obras">Explorar obras <span aria-hidden="true">↘</span></a>
+        </div>
+        <div class="hero-art art-sun" aria-label="Obra abstrata em tons de terracota e amarelo, título Horizonte interior" role="img">
+          <span class="art-stamp">P / 01</span>
+          <span class="art-caption">Horizonte interior<br /><small>acrílico sobre tela · 2025</small></span>
+        </div>
+        <div class="hero-note"><span class="line"></span>Peças únicas<br />feitas à mão</div>
+      </section>
+
+      <section class="intro-band" id="sobre" aria-labelledby="about-title">
+        <p class="eyebrow">O gesto antes da forma</p>
+        <h2 id="about-title">“Há coisas que só aparecem<br /><em>quando deixamos de procurar.</em>”</h2>
+        <p class="about-copy">Patrícia trabalha a partir do impulso, construindo camadas de cor e textura até que a pintura encontre o seu próprio equilíbrio.</p>
+      </section>
+
+      <section class="gallery-section" id="obras" aria-labelledby="gallery-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Seleção de trabalhos</p>
+            <h2 id="gallery-title">Obras recentes</h2>
+          </div>
+          <div class="filters" role="group" aria-label="Filtrar obras">
+            <button class="filter active" data-filter="all" type="button">Todas</button>
+            <button class="filter" data-filter="acrilico" type="button">Acrílico</button>
+            <button class="filter" data-filter="oleo" type="button">Óleo</button>
+            <button class="filter" data-filter="mista" type="button">Técnica mista</button>
+          </div>
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid" aria-live="polite">
+          <button class="art-card card-tall" data-category="acrilico" data-title="Entre marés" data-meta="Acrílico sobre tela · 2026" data-art="sea" type="button"><span class="art-thumb art-sea"><i></i></span><span class="card-info"><strong>Entre marés</strong><small>Acrílico sobre tela · 2026</small></span></button>
+          <button class="art-card card-wide" data-category="mista" data-title="A matéria do silêncio" data-meta="Técnica mista · 2025" data-art="silence" type="button"><span class="art-thumb art-silence"><i></i></span><span class="card-info"><strong>A matéria do silêncio</strong><small>Técnica mista · 2025</small></span></button>
+          <button class="art-card" data-category="oleo" data-title="Depois da chuva" data-meta="Óleo sobre tela · 2025" data-art="rain" type="button"><span class="art-thumb art-rain"><i></i></span><span class="card-info"><strong>Depois da chuva</strong><small>Óleo sobre tela · 2025</small></span></button>
+          <button class="art-card card-tall" data-category="mista" data-title="Lugar para ficar" data-meta="Técnica mista · 2024" data-art="place" type="button"><span class="art-thumb art-place"><i></i></span><span class="card-info"><strong>Lugar para ficar</strong><small>Técnica mista · 2024</small></span></button>
+          <button class="art-card" data-category="acrilico" data-title="O que fica" data-meta="Acrílico sobre tela · 2024" data-art="remain" type="button"><span class="art-thumb art-remain"><i></i></span><span class="card-info"><strong>O que fica</strong><small>Acrílico sobre tela · 2024</small></span></button>
+          <button class="art-card card-wide" data-category="oleo" data-title="Luz de inverno" data-meta="Óleo sobre tela · 2024" data-art="winter" type="button"><span class="art-thumb art-winter"><i></i></span><span class="card-info"><strong>Luz de inverno</strong><small>Óleo sobre tela · 2024</small></span></button>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contacto" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Tem uma pergunta?</p>
+          <h2 id="contact-title">Vamos falar<br /><em>sobre arte.</em></h2>
+        </div>
+        <div class="contact-detail"><p>Para saber mais sobre uma obra, disponibilidade ou futuras exposições:</p><a href="mailto:ola@patricia.art">ola@patricia.art</a></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span>© 2026 Patrícia</span><span>Feito com tempo e matéria</span><a href="#top">Voltar ao topo ↑</a></footer>
+
+    <dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-title">
+      <button class="close-lightbox" type="button" aria-label="Fechar obra">×</button>
+      <div class="lightbox-art" id="lightbox-art"></div>
+      <div class="lightbox-info"><p class="eyebrow">Obra</p><h2 id="lightbox-title"></h2><p id="lightbox-meta"></p></div>
+    </dialog>
+    <script src="script.js"></script>
+  </body>
+</html>
